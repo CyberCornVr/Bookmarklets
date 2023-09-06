@@ -12,13 +12,8 @@ function downloadFile(url, fileName){
       URL.revokeObjectURL(href);
     });
 };
-
-function newtag(tag){
-    return document.createElement(tag);
+function injectdiv(url){
+  fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+    .then(x => document.innerHTML += x;)
 };
-
-theDiv = newtag('div')
-theDiv.style.width = "70%"
-theDiv.style.height = "50%"
-theDiv.style.border = "10px solid black"
-theDiv.style.position = "absolute"
+injectdiv("https://raw.githubusercontent.com/CyberCornVr/Bookmarklets/main/Assets/dwpg.html");
