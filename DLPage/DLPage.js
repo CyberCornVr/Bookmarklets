@@ -17,3 +17,4 @@ function injectdiv(url){
     .then(x => document.innerHTML += x;)
 };
 injectdiv("https://raw.githubusercontent.com/CyberCornVr/Bookmarklets/main/Assets/dwpg.html");
+window.alert('hi');
